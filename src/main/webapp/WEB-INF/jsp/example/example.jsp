@@ -6,6 +6,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>sample page</h2>
+	<h2>example page</h2>
 </body>
 </html>

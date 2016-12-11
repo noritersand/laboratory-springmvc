@@ -1,5 +1,4 @@
-my work history
-===
+#SpringMVC-javaconfig
 
 ###environments
 - spring4.5-mvc-javaconfig
