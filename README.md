@@ -1,7 +1,7 @@
 my work history
 ===
 
-###envirionments
+###environments
 - spring4.5-mvc-javaconfig
 - maven
 - jdk 1.8
