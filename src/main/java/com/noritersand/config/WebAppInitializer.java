@@ -1,4 +1,4 @@
-package noritersand.config;
+package com.noritersand.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 

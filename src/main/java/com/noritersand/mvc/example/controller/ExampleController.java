@@ -1,4 +1,4 @@
-package noritersand.mvc.example.controller;
+package com.noritersand.mvc.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
