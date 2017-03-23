@@ -1,6 +1,6 @@
-#SpringMVC-javaconfig
+# SpringMVC-javaconfig
 
-###environments
+### environments
 - spring4.5-mvc-javaconfig
 - maven
 - jdk 1.8
