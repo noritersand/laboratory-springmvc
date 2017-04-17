@@ -1,4 +1,4 @@
-package com.noritersand.config;
+package springmvc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc // Spring MVC 활성화
-@ComponentScan("com.noritersand.mvc") // component-scan 범위 지정
+@ComponentScan("springmvc.mvc") // component-scan 범위 지정
 public class WebConfig extends WebMvcConfigurerAdapter {
 	/**
 	 * viewResolver 설정
