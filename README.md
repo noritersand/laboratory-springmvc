@@ -3,4 +3,4 @@
 ### environments
 - spring4.5-mvc-javaconfig
 - maven
-- jdk9
+- jdk10
