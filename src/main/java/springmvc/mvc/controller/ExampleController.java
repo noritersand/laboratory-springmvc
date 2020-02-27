@@ -2,18 +2,28 @@ package springmvc.mvc.controller;
 
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import springmvc.mvc.service.ExampleService;
+
 @Controller
 public class ExampleController {
+	@Autowired
+	ExampleService exampleService;
 	
 //	@RequestMapping(path = "/example/draw-example.do", method = { RequestMethod.GET })
 	@GetMapping("/example/draw-example.do")
 	public ModelAndView drawExample(ModelAndView mv) {
 		
 		System.out.println("잘 들어 오는군?");
+		
+		exampleService.invokeWithoutTransaction();
+		
+		// TODO 아래 메서드 내부에서 브레이크 걸어보면 CGLIB 스택이 중간에 없다. 트랜잭션 설정 제대로(WebConfig.java) 해놓고 다시 해봐야 함.
+		exampleService.invokeWithTransaction();
 		
 		mv.setViewName("/example/example");
 		return mv;
