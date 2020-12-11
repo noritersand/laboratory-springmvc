@@ -1,4 +1,6 @@
-# SpringMVC-javaconfig
+# springmvc-test
+
+SpringMVC 테스트용 프로젝트
 
 #### environments
 
