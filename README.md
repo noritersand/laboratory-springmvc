@@ -1,6 +1,6 @@
 # springmvc-test
 
-SpringMVC 테스트용 프로젝트
+SpringMVC 테스트용 저장소
 
 #### environments
 
