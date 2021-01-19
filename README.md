@@ -4,6 +4,6 @@ SpringMVC 테스트용 저장소
 
 #### environments
 
-- spring4.5-mvc-javaconfig
+- spring 4.3.4
 - maven
-- jdk10
+- jdk 8 or higher

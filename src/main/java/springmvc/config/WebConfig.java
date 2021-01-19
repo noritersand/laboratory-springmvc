@@ -37,7 +37,13 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 		resolver.setExposeContextBeansAsAttributes(true);
 		return resolver;
 	}
-
+	
+	@Override
+	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+		// DispatcherServlet이 고정적인 리소스들에 대한 요청을 자신이 직접 처리하지 않고 서블릿 컨테이너의 디폴트 서블릿 전달을 요청한다.
+		configurer.enable();
+	}
+	
 	@Bean
 	public PlatformTransactionManager transactionManager() {
 		DataSource dataSource = new DataSource() {
@@ -97,11 +103,5 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 			}
 		};
 		return new DataSourceTransactionManager(dataSource);
-	}
-	
-	@Override
-	public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-		// DispatcherServlet이 고정적인 리소스들에 대한 요청을 자신이 직접 처리하지 않고 서블릿 컨테이너의 디폴트 서블릿 전달을 요청한다.
-		configurer.enable();
 	}
 }
